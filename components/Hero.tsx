@@ -58,15 +58,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
       </Container>
-      <Container>
-        <div className="flex justify-center mt-12">
-          <Image
-            src={""}
-            className="object-cover w-full h-24"
-            alt="Trusted companies"
-          />
-        </div>
-      </Container>
+      
     </>
   );
 };
