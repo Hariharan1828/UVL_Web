@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
     <>
       <Container className="flex flex-wrap max-w-7xl mx-auto">
         <div className="flex items-center w-full lg:w-1/2">
-          <div className="max-w-2xl mb-8 ">
+          <div className="max-w-2xl mb-8">
             <h1 className="text-4xl font-bold leading-snug tracking-tight text-sky-700 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
               UniVersaLink Solutions
             </h1>
@@ -60,8 +60,8 @@ const Hero: React.FC = () => {
       </Container>
       <Container>
         <div className="flex justify-center mt-12">
-          <img
-            src="/img/companies.png"
+          <Image
+            src={""}
             className="object-cover w-full h-24"
             alt="Trusted companies"
           />
