@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Container from "./container";
-import LOGOOOO from "../public/20125871_6222535.svg";
+import ILUSS from "../public/20125871_6222535.svg";
 
 const Hero: React.FC = () => {
   return (
@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
         <div className="flex items-center justify-center w-full lg:w-1/2">
           <div className="">
             <Image
-              src={LOGOOOO}
+              src={ILUSS}
               width={616}
               height={617}
               className={"object-cover"}

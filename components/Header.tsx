@@ -1,5 +1,4 @@
 "use client";
-import Image from 'next/image'
 import React, { Fragment, useState } from 'react'
 import { Bars3Icon, ChevronDownIcon, PaperAirplaneIcon, XMarkIcon } from '@heroicons/react/24/solid';
 import Logo from './Logo';
