@@ -8,19 +8,19 @@ import { cn } from '@/lib/utils';
 const prodcts =[
     {
         name:"Service 1",
-        description:"Speak Directly to your customers",
+        description:"Consequat pariatur Lorem elit ad minim eu.",
         href:"#",
         icon:PaperAirplaneIcon
     },
     {
         name:"Service 2",
-        description:"Get a better understanding about you traffic",
+        description:"Anim aliquip mollit enim ullamco.",
         href:"#",
         icon:PaperAirplaneIcon
     },
     {
         name:"Service 3",
-        description:"Customers data will be Safe and secure",
+        description:"Pariatur non consequat elit aliquip laboris.",
         href:"#",
         icon:PaperAirplaneIcon
     }
@@ -119,8 +119,8 @@ const Header = () => {
 
                     </Transition>
                 </Popover>
-                <a href="#" className='text-sm font-semibold leading-6 text-sky-700'> About Us</a>
-                <a href="#" className='text-sm font-semibold leading-6 text-sky-700'>Contact Us</a>
+                <a href="/AboutUs" className='text-sm font-semibold leading-6 text-sky-700'> About Us</a>
+                <a href="/ContactUs" className='text-sm font-semibold leading-6 text-sky-700'>Contact Us</a>
 
             </Popover.Group>
 

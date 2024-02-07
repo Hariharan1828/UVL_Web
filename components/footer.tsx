@@ -82,7 +82,7 @@ export default function Footer(): JSX.Element {
             target="_blank"
             rel="noopener noreferrer"
           >
-            UniversaLink Solutions
+            UniVersaLink Solutions
           </a>
         </div>
       </Container>
