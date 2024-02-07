@@ -1,9 +1,45 @@
 "use client";
 import Image from 'next/image'
-import React, { useState } from 'react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
+import React, { Fragment, useState } from 'react'
+import { Bars3Icon, ChevronDownIcon, PaperAirplaneIcon, XMarkIcon } from '@heroicons/react/24/solid';
 import Logo from './Logo';
-import { Dialog, Disclosure, Popover } from '@headlessui/react';
+import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react';
+import { cn } from '@/lib/utils';
+
+const prodcts =[
+    {
+        name:"Service 1",
+        description:"Speak Directly to your customers",
+        href:"#",
+        icon:PaperAirplaneIcon
+    },
+    {
+        name:"Service 2",
+        description:"Get a better understanding about you traffic",
+        href:"#",
+        icon:PaperAirplaneIcon
+    },
+    {
+        name:"Service 3",
+        description:"Customers data will be Safe and secure",
+        href:"#",
+        icon:PaperAirplaneIcon
+    }
+];
+
+const callsToAction= [
+    {
+        name:"Contact",
+        href:"#",
+        icon:PaperAirplaneIcon
+    },
+    {
+        name:"Contact Support",
+        href:"#",
+        icon:PaperAirplaneIcon
+    }
+];
+
 
 const Header = () => {
     const [MobileOpnMenu, setMobileOpnMenu] =useState(false);
@@ -23,14 +59,71 @@ const Header = () => {
 
                 </button>
             </div>
-            <div
-            className="hidden lg:flex lg:gap-x-8"
+            <Popover.Group
+            className="hidden lg:flex lg:gap-x-12"
             >
-                <a href="/" className='text-xs font-semibold leading-6 text-sky-700'>About Us</a>
-                <a href="/" className='text-xs font-semibold leading-6 text-sky-700'>Services</a>
-                <a href="/" className='text-xs font-semibold leading-6 text-sky-700'>Contact Us</a>
+                <Popover className="relative">
+                    <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-sky-700">
+                        Services
+                        <ChevronDownIcon
+                        className='h-5 w-5 flex-none text-sky-700'
+                        aria-hidden="true"
+                        ></ChevronDownIcon>
+                    </Popover.Button>
+                    <Transition
+                        as={Fragment}
+                        enter="transition ease-out duration-200"
+                        enterFrom='opacity-0 translate-y-1'
+                        enterTo='opacity-100 translate-y-0'
+                        leave="transition ease-in duration-150"
+                        leaveFrom='opacity-100 translate-y-0'
+                        leaveTo='opacity-0 translate-y-1'
 
-            </div>
+                
+                    >
+                        <Popover.Panel className="absolute bg-white -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl shadow-lg ring-1 ring-gray-900/5">
+                            <div className='p-4'>
+                                {prodcts.map((item) =>{
+                                    return(
+                                        <div key={item.name} className='group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50'>
+                                            <div className='flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-gray-50'>
+                                                <item.icon className='h-6 w-6 text-[#013B94] group-hover:text-blue-600' aria-hidden="true"/>
+                                            </div>
+
+                                            <div className='flex-auto'>
+                                                <a href={item.href} className='block font-semibold text-[#013B94]'>
+                                                    {item.name}
+                                                    <span className='absolute inset-0'/>
+                                                </a>
+                                                <p className='mt-1 text-[#013B94]'>
+                                                    {item.description}
+                                                </p>
+                                            </div>
+
+
+                                        </div>
+                                    )
+                                })}
+                            </div>
+                            <div className='grid grid-cols-2 divide-x divide-gray900/5 bg-gray-50'>
+                                {callsToAction.map((item)=>{
+                                    return (
+                                         <a key={item.name} href={item.href} className='flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-[#013B94] hover:bg-gray-100' >
+                                            <item.icon className='h-5 w-5 flex-none text-[#013B94]' aria-hidden="true"/>
+                                            {item.name}
+                                        </a>
+
+                                    )
+                                })}
+                            </div>
+                        </Popover.Panel>
+
+                    </Transition>
+                </Popover>
+                <a href="#" className='text-sm font-semibold leading-6 text-sky-700'> About Us</a>
+                <a href="#" className='text-sm font-semibold leading-6 text-sky-700'>Contact Us</a>
+
+            </Popover.Group>
 
         </nav>
         <Dialog
@@ -67,11 +160,37 @@ const Header = () => {
                             >
                                 {({open})=>(
                                     <>
-                                    <div className="flex  flex-col mt-10">
+                                    <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-4 pl-3 pr-3.5 text-base font-semibold 
+                                    leading-7 text-white hover:bg-blue-800">
+                                        Services
+                                        <ChevronDownIcon className={cn(open? "rotate-180":"",
+                                        
+                                        "h-5 w-5 flex-none"
+
+                                        )}
+                                        aria-hidden="true"/>
+                                    </Disclosure.Button>
+                                    <Disclosure.Panel className="mt-2 space-y-2">
+                                        {[...prodcts, ...callsToAction].map((item)=>{
+                                            return (
+                                                <Disclosure.Button 
+                                                key={item.name}
+                                                as ="a"
+                                                href={item.href}
+                                                className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-white hover:bg-blue-800">
+                                                    {item.name}
+
+                                                </Disclosure.Button>
+                                            )
+                                        })}
+
+                                    
+
+                                    </Disclosure.Panel>
+                                    <div className="flex  flex-col">
                                         <a href="#" className='items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold 
                                     leading-7 text-white hover:bg-blue-800'> About Us</a>
-                                        <a href="#" className='items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold 
-                                    leading-7 text-white hover:bg-blue-800'>Services</a>
+                                       
                                         <a href="#" className='items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold 
                                     leading-7 text-white hover:bg-blue-800'> Contact Us</a>
                                 
