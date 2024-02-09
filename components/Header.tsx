@@ -133,7 +133,7 @@ const Header = () => {
         >
             <div className="fixed inset-0 z-10"/>
             <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full 
-            overflow-y-auto bg-[#013B94] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            overflow-y-auto bg-sky-700 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                 <div className="flex items-center justify-between">
                     <a href="#" className='-m-1.5 p-1.5'>
                         <span className='sr-only'>TakeFlight.com</span>
@@ -160,7 +160,7 @@ const Header = () => {
                                 {({open})=>(
                                     <>
                                     <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-4 pl-3 pr-3.5 text-base font-semibold 
-                                    leading-7 text-white hover:bg-blue-800">
+                                    leading-7 text-white hover:bg-sky-800">
                                         Services
                                         <ChevronDownIcon className={cn(open? "rotate-180":"",
                                         
@@ -176,7 +176,7 @@ const Header = () => {
                                                 key={item.name}
                                                 as ="a"
                                                 href={item.href}
-                                                className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-white hover:bg-blue-800">
+                                                className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-white hover:bg-sky-800">
                                                     {item.name}
 
                                                 </Disclosure.Button>
@@ -188,10 +188,10 @@ const Header = () => {
                                     </Disclosure.Panel>
                                     <div className="flex  flex-col">
                                         <a href="#" className='items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold 
-                                    leading-7 text-white hover:bg-blue-800'> About Us</a>
+                                    leading-7 text-white hover:bg-sky-800'> About Us</a>
                                        
                                         <a href="#" className='items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold 
-                                    leading-7 text-white hover:bg-blue-800'> Contact Us</a>
+                                    leading-7 text-white hover:bg-sky-800'> Contact Us</a>
                                 
 
                                     </div>
