@@ -1,19 +1,46 @@
-import React from "react";
-import Container from "./container";
-import { Disclosure } from "@headlessui/react";
-import { ChevronUpIcon } from "@heroicons/react/24/solid";
+"use client"; 
+import React from 'react'
+import Container from './container'
+import { Disclosure } from '@headlessui/react'
+import { ChevronUpIcon } from '@heroicons/react/24/solid'
 
-interface FaqItem {
-  question: string;
-  answer: string;
-}
-
-const Faq: React.FC = () => {
+const faqdataa =[
+    {
+        id:1,
+        question: "Dolor in quis qui aliqua?",
+        answer: "In irure ex nisi commodo cillum et tempor in minim velit amet.",
+      },
+      {
+        id:2,
+        question: "Cupidatat nulla ipsum eiusmod laboris ut?",
+        answer: "Est ullamco sint enim elit ea nisi non duis.",
+      },
+      {
+        id:3,
+        question: "Reprehenderit sunt magna ex esse eu sit qui eiusmod ? ",
+        answer:
+          "Deserunt consequat eu in quis anim ipsum dolor cupidatat eu sint occaecat labore ad.",
+      },
+      {
+        id:4,
+        question: "Velit velit cillum laborum qui ullamco et sunt?",
+        answer:
+          "Cillum ut ipsum consectetur ad eu consectetur ut proident occaecat velit quis in esse.",
+      },
+]
+const FAq = () => {
   return (
     <Container className="!p-0">
       <div className="w-full max-w-2xl p-2 mx-auto rounded-2xl">
-        {faqdata.map((item: FaqItem, index: number) => (
-          <div key={item.question} className="mb-5">
+      <h1 className='font-semibold text-sky-700 text-3xl md:text-4xl text-center mb-5 '>
+            Frequently asked questions
+          </h1>
+          <p className="font-normal text-gray-500 text-md md:text-lg text-center mb-20 md:mb-10 ">
+              Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit 
+          </p>
+        {faqdataa.map((item) => (
+          <div key={item.id} className="mb-5">
             <Disclosure>
               {({ open }) => (
                 <>
@@ -35,28 +62,7 @@ const Faq: React.FC = () => {
         ))}
       </div>
     </Container>
-  );
-};
+  )
+}
 
-const faqdata: FaqItem[] = [
-  {
-    question: "Dolor in quis qui aliqua?",
-    answer: "In irure ex nisi commodo cillum et tempor in minim velit amet.",
-  },
-  {
-    question: "Cupidatat nulla ipsum eiusmod laboris ut?",
-    answer: "Est ullamco sint enim elit ea nisi non duis.",
-  },
-  {
-    question: "Reprehenderit sunt magna ex esse eu sit qui eiusmod ? ",
-    answer:
-      "Deserunt consequat eu in quis anim ipsum dolor cupidatat eu sint occaecat labore ad.",
-  },
-  {
-    question: "Velit velit cillum laborum qui ullamco et sunt?",
-    answer:
-      "Cillum ut ipsum consectetur ad eu consectetur ut proident occaecat velit quis in esse.",
-  },
-];
-
-export default Faq;
+export default FAq;
