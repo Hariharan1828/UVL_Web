@@ -40,22 +40,22 @@ const Faq: React.FC = () => {
 
 const faqdata: FaqItem[] = [
   {
-    question: "Is this template completely free to use?",
-    answer: "Yes, this template is completely free to use.",
+    question: "Dolor in quis qui aliqua?",
+    answer: "In irure ex nisi commodo cillum et tempor in minim velit amet.",
   },
   {
-    question: "Can I use it in a commercial project?",
-    answer: "Yes, this you can.",
+    question: "Cupidatat nulla ipsum eiusmod laboris ut?",
+    answer: "Est ullamco sint enim elit ea nisi non duis.",
   },
   {
-    question: "What is your refund policy? ",
+    question: "Reprehenderit sunt magna ex esse eu sit qui eiusmod ? ",
     answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
+      "Deserunt consequat eu in quis anim ipsum dolor cupidatat eu sint occaecat labore ad.",
   },
   {
-    question: "Do you offer technical support? ",
+    question: "Velit velit cillum laborum qui ullamco et sunt?",
     answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
+      "Cillum ut ipsum consectetur ad eu consectetur ut proident occaecat velit quis in esse.",
   },
 ];
 
