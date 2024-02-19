@@ -2,9 +2,10 @@
 import React from 'react'
 
 const page = () => {
+  
   return (
     <>
-    <section className=' p-8 md:p-16 '>
+    <section className=' p-8 md:p-16 mb-28'>
       <div className='max-w-7xl mx-auto'>
         <h1>
           <span className="block font-display text-base font-semibold text-sky-700">About us</span>
@@ -21,6 +22,12 @@ const page = () => {
             </div>
             </div>
         </div>
+    </section>
+    <section className='max-w-7xl mx-auto'>
+          <span className="mt-6 block max-w-5xl text-center mx-auto font-display text-5xl font-medium tracking-tight text-sky-700 [text-wrap:balance] sm:text-6xl">
+            Our Tagline
+          </span>
+
     </section>
 
     </>
