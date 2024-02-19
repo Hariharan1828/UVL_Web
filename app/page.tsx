@@ -11,7 +11,6 @@ export default function Home() {
       <Hero/>
       <Services/>
       <FAq/>
-      <Footer/>
       <PopupWidget/> 
       
     </main>

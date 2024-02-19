@@ -1,13 +1,15 @@
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "UVL_WEB",
-  description: "UniversaLink Solutions"
+  description: "UniVersaLink Solutions"
 };
 
 export default function RootLayout({
@@ -17,9 +19,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      
       <body className={inter.className}>
       <Header/>
-        {children}</body>
+        {children}
+        <Footer/>
+        </body>
     </html>
   );
 }

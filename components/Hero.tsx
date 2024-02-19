@@ -8,20 +8,19 @@ const Hero: React.FC = () => {
     <>
       <Container className="flex flex-wrap max-w-7xl mx-auto">
         <div className="flex items-center w-full lg:w-1/2">
-          <div className="max-w-2xl mb-8">
-            <h1 className="text-4xl font-bold leading-snug tracking-tight text-sky-700 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
+          <div className="max-w-2xl mb-8 lg:mt-10">
+            <h1 className="text-4xl font-bold lg:font-medium font-display leading-snug tracking-tight text-sky-700 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
               UniVersaLink Solutions
             </h1>
-            <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-            Lorem ipsum is commonly used as placeholder text in design and publishing. Its origins can be traced back a passage from CicerosDe Finibus Bon et Malorum
-            </p>
+            <p className="py-5 text-lg leading-normal text-gray-500 lg:text-lg xl:text-xl dark:text-gray-300">
+            At UniversaLink, we are dedicated to transforming your business through innovative solutions that drive growth and elevate your success. With a commitment to excellence, we specialize in Human Resource Consulting, Business Intellgence, Artificial Intelligence Solutions, Digitalization and IT services            </p>
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
               <a
                 href="/"
                 target="_blank"
                 // rel="noopener"
-                className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-500 rounded-md ">
+                className="px-8 py-4 text-sm font-medium text-center text-white bg-indigo-500 rounded-md ">
                 Explore
               </a>
              
