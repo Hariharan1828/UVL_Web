@@ -8,21 +8,42 @@ const services =[
   {
     id:1,
     title: "HR Recruitment",
-    description:"Commodo velit laborum culpa voluptate. Exercitation eu sint deserunt duis Lorem ipsum ad id ad. Commodo reprehenderit elit deserunt mollit cupidatat. Laborum id consectetur ad eu exercitation. Magna anim id officia proident ex id deserunt sint minim deserunt ea cillum officia culpa. Aute velit enim nulla ipsum sit incididunt pariatur reprehenderit consequat adipisicing esse labore laboris pariatur. Eu irure cillum eu sunt culpa.",
+    description:"Transform your workforce with our HR services - offering full-time talent solutions and flexible contract employees for seamless business growth. Elevate your business with our services, delivering strategic solutions for talent acquisition, employee development, and organizational success.",
     image:ILUSS_HR,
     href:"/services",
   },
   {
     id:2,
     title:"Training and Development",
-    description: "Fugiat adipisicing sint nisi occaecat. Ullamco velit enim Lorem tempor dolor minim occaecat id cillum consectetur excepteur cupidatat ex culpa. Dolore esse proident aliquip incididunt anim nisi elit enim voluptate eiusmod labore. Lorem magna officia ad sint duis occaecat deserunt labore. Laborum quis labore pariatur anim ullamco tempor fugiat aliqua id aliquip elit. Dolore aute non dolor irure voluptate voluptate.",
+    description:"Unlock potential and foster growth with our comprehensive training and development solutions. Tailored programs to empower your workforce for sustained success.",
     image:ILUSS_HR,
     href:"/services",
   },
   {
     id:3,
     title:"Business Intelligence",
-    description: "Fugiat adipisicing sint nisi occaecat. Ullamco velit enim Lorem tempor dolor minim occaecat id cillum consectetur excepteur cupidatat ex culpa. Dolore esse proident aliquip incididunt anim nisi elit enim voluptate eiusmod labore. Lorem magna officia ad sint duis occaecat deserunt labore. Laborum quis labore pariatur anim ullamco tempor fugiat aliqua id aliquip elit. Dolore aute non dolor irure voluptate voluptate.",
+    description:"Transform data into actionable insights with our Business Intelligence solutions, empowering your decision-making for a competitive edge in the dynamic market landscape.",
+    image:ILUSS_HR,
+    href:"/services",
+  },
+  {
+    id:4,
+    title:"IT services",
+    description: "From concept to completion, our end-to-end project management ensures seamless delivery, driving efficiency and success throughout every phase of your project.",
+    image:ILUSS_HR,
+    href:"/services",
+  },
+  {
+    id:5,
+    title:"Digitalization",
+    description:"Elevate your digital presence with our expert team. We specialize in seamless web and mobile app development, delivering innovative solutions tailored to your business needs.",
+    image:ILUSS_HR,
+    href:"/services",
+  },
+  {
+    id:6,
+    title:"Artificial Intelligence",
+    description:" Empower your AI initiatives with our expert model building and training services. Unlock the full potential of your data with cutting-edge machine learning solutions.",
     image:ILUSS_HR,
     href:"/services",
   },
@@ -30,7 +51,7 @@ const services =[
 
 const Services = () => {
   return (
-    <section className='p-8 md:p-16'>
+    <section id="services" className='p-8 md:p-16'>
         <div className=" container max-w-screen-xl mx-auto px-4 overflow-hidden">
         
           <h1 className='font-bold font-display text-sky-700 text-3xl md:text-4xl text-center mb-5 '>
@@ -44,7 +65,7 @@ const Services = () => {
         <>
         {((service.id+1)%2==0)?(
         <div key={service.id} className="hidden lg:flex flex-col xl:flex-row items-center justify-between mb-20 md:mb-10 ">
-          <div key={service.id+service.image} className="mx-auto xl:mx-0 mb-20 xl:mb-0 lg:w-[200rem]">
+          <div key={service.id+service.image} className="mx-auto xl:mx-0 mb-20 xl:mb-0 lg:w-[100rem]">
             <Image src={service.image} alt=''/>
           </div>
           <div key={service.id} className="mx-auto xl:mx-0 text-center xl:text-left">
@@ -75,7 +96,7 @@ const Services = () => {
               <ChevronDownIcon className='w-5'/>
             </Link>
           </div>
-          <div key={service.id+service.image} className="mx-auto xl:mx-0 mb-20 xl:mb-0 lg:w-[200rem]">
+          <div key={service.id+service.image} className="mx-auto xl:mx-0 mb-20 xl:mb-0 lg:w-[100rem]">
             <Image src={service.image} alt=''/>
           </div>
 

@@ -7,21 +7,39 @@ import { cn } from '@/lib/utils';
 
 const prodcts =[
     {
-        name:"Service 1",
+        name:"HR Recruitment",
         description:"Consequat pariatur Lorem elit ad minim eu.",
-        href:"#",
+        href:"#services",
         icon:PaperAirplaneIcon
     },
     {
-        name:"Service 2",
+        name:"Training and Development",
         description:"Anim aliquip mollit enim ullamco.",
-        href:"#",
+        href:"#services",
         icon:PaperAirplaneIcon
     },
     {
-        name:"Service 3",
+        name:"Business Intelligence",
         description:"Pariatur non consequat elit aliquip laboris.",
-        href:"#",
+        href:"#services",
+        icon:PaperAirplaneIcon
+    },
+    {
+        name:"IT services",
+        description:"Pariatur non consequat elit aliquip laboris.",
+        href:"#services",
+        icon:PaperAirplaneIcon
+    },
+    {
+        name:"Digitalization",
+        description:"Pariatur non consequat elit aliquip laboris.",
+        href:"#services",
+        icon:PaperAirplaneIcon
+    },
+    {
+        name:"Artificial Intelligence",
+        description:"Pariatur non consequat elit aliquip laboris.",
+        href:"#services",
         icon:PaperAirplaneIcon
     }
 ];
@@ -29,12 +47,7 @@ const prodcts =[
 const callsToAction= [
     {
         name:"Contact",
-        href:"#",
-        icon:PaperAirplaneIcon
-    },
-    {
-        name:"Contact Support",
-        href:"#",
+        href:"#contactUs",
         icon:PaperAirplaneIcon
     }
 ];
@@ -104,11 +117,11 @@ const Header = () => {
                                     )
                                 })}
                             </div>
-                            <div className='grid grid-cols-2 divide-x divide-gray900/5 bg-gray-50'>
+                            <div className='grid  bg-gray-50'>
                                 {callsToAction.map((item)=>{
                                     return (
                                          <a key={item.name} href={item.href} className='flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-[#013B94] hover:bg-gray-100' >
-                                            <item.icon className='h-5 w-5 flex-none text-[#013B94]' aria-hidden="true"/>
+                                            <item.icon className='h-5 w-5 text-[#013B94]' aria-hidden="true"/>
                                             {item.name}
                                         </a>
 

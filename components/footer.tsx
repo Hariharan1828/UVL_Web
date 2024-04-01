@@ -77,13 +77,14 @@ export default function Footer(): JSX.Element {
         </div>
 
         <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
-          Copyright © {new Date().getFullYear()}. 
+          Copyright © {new Date().getFullYear()}.  
           <a
-            href="/"
+            href="#"
             target="_blank"
+            className="ml-1"
             rel="noopener noreferrer"
           >
-            UniVersaLink Solutions
+           UniVersaLink Solutions. All Rights Reserved.
           </a>
         </div>
       </Container>

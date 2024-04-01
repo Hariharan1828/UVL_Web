@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
             {/* <p className="py-5 text-lg leading-normal text-gray-500 lg:text-lg xl:text-xl dark:text-gray-300">
             At UniversaLink, we are dedicated to transforming your business through innovative solutions that drive growth and elevate your success. With a commitment to excellence, we specialize in Human Resource Consulting, Business Intellgence, Artificial Intelligence Solutions, Digitalization and IT services            </p> */}
             <TextGenerateEffect words={para} /> 
-            <div className="flex flex-col items-start space-y-3 lg:mt-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
+            <div className="flex flex-col items-start mt-5 space-y-3 lg:mt-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
               <a
                 href="/"
                 target="_blank"
