@@ -23,19 +23,19 @@ export const projects = [
     title: "Expertise",
     description:
       "Leverage the expertise of seasoned professionals in the industry.",
-    link: "# ",
+    link: "",
   },
   {
     title: "Innovation",
     description:
       " Stay ahead with cutting-edge technologies and creative solutions.",
-    link: "#",
+    link: "",
   },
   {
     title: "Customization",
     description:
       "Tailored services designed to meet the unique needs of your business.",
-    link: "#",
+    link: "",
   },
 
 ];
