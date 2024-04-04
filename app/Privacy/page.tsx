@@ -16,7 +16,7 @@ const Privacy = () => {
             <br />
             <strong>Personal Identification Information:</strong> We may collect personal identification information from users when they visit our site, fill out forms, or interact with our services. Users may be asked for their name, email address, phone number, or other relevant details.
             <br />
-            <strong>Non-personal Identification Information:</strong> We may collect non-personal identification information about users whenever they interact with our website. Non-personal identification information may include browser name, type of computer, and technical information about users' means of connection to our site.
+            <strong>Non-personal Identification Information:</strong> We may collect non-personal identification information about users whenever they interact with our website. Non-personal identification information may include browser name, type of computer, and technical information about users&apos; means of connection to our site.
         </p>
         <p className='mt-2'>
             <strong>How We Use Collected Information:</strong>
@@ -36,7 +36,7 @@ const Privacy = () => {
         <p className='mt-2'>
             <strong>Sharing Your Personal Information:</strong>
             <br />
-            We do not sell, trade, or rent users' personal identification information to others. We may share generic aggregated demographic information not linked to any personal identification information regarding visitors and users with our business partners, trusted affiliates, and advertisers.
+            We do not sell, trade, or rent users&apos; personal identification information to others. We may share generic aggregated demographic information not linked to any personal identification information regarding visitors and users with our business partners, trusted affiliates, and advertisers.
         </p>
         <p className='mt-2'>
             <strong>Your Acceptance of These Terms:</strong>
