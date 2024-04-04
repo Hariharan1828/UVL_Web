@@ -7,8 +7,33 @@ import Logo from "./Logo";
 
 
 export default function Footer(): JSX.Element {
-  const navigation: string[] = ["Services", "About Us", "Contact Us"];
-  const legal: string[] = ["Terms", "Privacy", "Legal"];
+  const navigation = [
+    {
+      name:"Services",
+      link:"/services"  
+  },
+  {
+    name:"AboutUs",
+    link:"/AboutUs"  
+},
+{
+  name:"ContactUs",
+  link:"/ContactUs"  
+},
+  
+   ];
+
+  const legal = [
+        {
+          name:"Terms And Conditions",
+          link:"/Terms"  
+      },
+      {
+        name:"Privacy Policy",
+        link:"/Privacy"  
+    }
+
+];
 
   return (
     <div className="relative">
@@ -20,15 +45,14 @@ export default function Footer(): JSX.Element {
             </div>
 
             <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-              Qui amet in in eu reprehenderit do adipisicing cupidatat nisi qui laboris duis aute aliqua. Irure nisi magna aute commodo enim enim eiusmod eiusmod ex ex esse. Amet ea excepteur eiusmod officia tempor ipsum et amet cillum. 
-            </div>
+            At UniversaLink, we are dedicated to transforming your business through innovative solutions that drive growth and elevate your success. With a commitment to excellence, we specialize in Human Resource Consulting, Business Intellgence, Artificial Intelligence Solutions, Digitalization and IT services            </div>
           </div>
 
           <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
-              {navigation.map((item: string, index: number) => (
-                <Link key={index} href="/" className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-sky-500 focus:text-sky-500 focus:bg-sky-100 focus:outline-none dark:focus:bg-trueGray-700" >
-                    {item}
+              {navigation.map((item, index: number) => (
+                <Link key={index} href={item.link} className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-sky-500 focus:text-sky-500 focus:bg-sky-100 focus:outline-none dark:focus:bg-trueGray-700" >
+                    {item.name}
                 </Link>
               ))}
             </div>
@@ -36,9 +60,9 @@ export default function Footer(): JSX.Element {
 
           <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
-              {legal.map((item: string, index: number) => (
-                <Link key={index} href="/" className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-sky-500 focus:text-sky-500 focus:bg-sky-100 focus:outline-none dark:focus:bg-trueGray-700">
-                    {item}
+              {legal.map((item, index: number) => (
+                <Link key={index} href={item.link} className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-sky-500 focus:text-sky-500 focus:bg-sky-100 focus:outline-none dark:focus:bg-trueGray-700">
+                    {item.name}
                 </Link>
               ))}
             </div>

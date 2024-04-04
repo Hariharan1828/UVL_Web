@@ -27,6 +27,15 @@ const page = () => {
           <span className="mt-6 block max-w-5xl text-center mx-auto font-display text-5xl font-medium tracking-tight text-sky-700 [text-wrap:balance] sm:text-6xl">
             Our Tagline
           </span>
+          <div className='lg:text-7xl flex justify-center items-center text-3xl text-center p-10 lg:pt-16 text-gray-600'>
+              <span className="items-center inline-block lg:space-x-20 space-x-10">
+                  <span>Ink</span>
+                  <span>Think</span>
+                  <span>Thrive</span>
+              </span>
+            </div>
+
+
 
     </section>
 

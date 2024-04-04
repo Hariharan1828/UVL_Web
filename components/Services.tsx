@@ -47,6 +47,13 @@ const services =[
     image:ILUSS_HR,
     href:"/services",
   },
+  {
+    id:7,
+    title:"Robotic process automation",
+    description:"Officia incididunt ad eu ad mollit culpa proident nisi amet in eiusmod nostrud id. Pariatur est eu quis laboris magna sit elit. Fugiat do consectetur minim reprehenderit mollit amet culpa voluptate duis reprehenderit ad qui.",
+    image:ILUSS_HR,
+    href:"/services",
+  },
 ]
 
 const Services = () => {
@@ -54,17 +61,17 @@ const Services = () => {
     <section id="services" className='p-8 md:p-16'>
         <div className=" container max-w-screen-xl mx-auto px-4 overflow-hidden">
         
-          <h1 className='font-bold font-display text-sky-700 text-3xl md:text-4xl text-center mb-5 '>
+          <h1 id='ServiceTitle' className='font-bold font-display text-sky-700 text-3xl md:text-4xl text-center mb-5 '>
             What we do?
           </h1>
-          <p className="font-normal text-gray-500 text-md md:text-lg text-center mb-20 md:mb-10 ">
+          {/* <p className="font-normal text-gray-500 text-md md:text-lg text-center mb-20 md:mb-10 ">
               Excepteur sint occaecat cupidatat non proident, sunt in
               culpa qui officia deserunt mollit 
-          </p>
+          </p> */}
       {services.map((service)=>(
         <>
         {((service.id+1)%2==0)?(
-        <div key={service.id} className="hidden lg:flex flex-col xl:flex-row items-center justify-between mb-20 md:mb-10 ">
+        <div id={service.title} key={service.id} className="hidden lg:flex flex-col xl:flex-row items-center justify-between mb-20 md:mb-10 ">
           <div key={service.id+service.image} className="mx-auto xl:mx-0 mb-20 xl:mb-0 lg:w-[100rem]">
             <Image src={service.image} alt=''/>
           </div>

@@ -1,9 +1,10 @@
+import { ContactPage } from '@/components/ContactPage'
 import React from 'react'
 
 const page = () => {
   return (
-    <div className='text-slate-400'>Under Dvelopment</div>
-  )
+      <ContactPage/>
+    )
 }
 
 export default page

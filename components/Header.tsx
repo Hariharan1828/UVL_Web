@@ -9,7 +9,7 @@ const prodcts =[
     {
         name:"HR Recruitment",
         description:"Consequat pariatur Lorem elit ad minim eu.",
-        href:"#services",
+        href:"#services ",
         icon:PaperAirplaneIcon
     },
     {
@@ -41,13 +41,19 @@ const prodcts =[
         description:"Pariatur non consequat elit aliquip laboris.",
         href:"#services",
         icon:PaperAirplaneIcon
+    },
+    {
+        name:"Robotic process automation",
+        description:"Pariatur non consequat elit aliquip laboris.",
+        href:"#services",
+        icon:PaperAirplaneIcon
     }
 ];
 
 const callsToAction= [
     {
         name:"Contact",
-        href:"#contactUs",
+        href:"/ContactUs",
         icon:PaperAirplaneIcon
     }
 ];
@@ -56,7 +62,7 @@ const callsToAction= [
 const Header = () => {
     const [MobileOpnMenu, setMobileOpnMenu] =useState(false);
   return (
-    <header className='top-0 z-50 lg:sticky border-b-2 border-slate-200 bg-white'>
+    <header className=' top-0 z-50 lg:sticky border-b-2 border-slate-200 bg-white'>
         <nav className='max-w-7xl mx-auto flex items-center justify-between p-6 lg:px-8 lg:p-2' aria-label='Global'>
             <Logo/>
             <div className='flex lg:hidden'>
@@ -94,10 +100,10 @@ const Header = () => {
                 
                     >
                         <Popover.Panel className="absolute bg-white -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl shadow-lg ring-1 ring-gray-900/5">
-                            <div className='p-4'>
+                            <div className='p-4 '>
                                 {prodcts.map((item) =>{
                                     return(
-                                        <div key={item.name} className='group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50'>
+                                        <div key={item.name} className='group relative flex max-h-[10vh]  items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50'>
                                             <div className='flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-gray-50'>
                                                 <item.icon className='h-6 w-6 text-[#013B94] group-hover:text-blue-600' aria-hidden="true"/>
                                             </div>
@@ -149,7 +155,7 @@ const Header = () => {
             overflow-y-auto bg-sky-700 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                 <div className="flex items-center justify-between">
                     <a href="#" className='-m-1.5 p-1.5'>
-                        <span className='sr-only'>TakeFlight.com</span>
+                        <span className='sr-only'>UniversaLink Solutions</span>
                         <Logo/>
                         {/* <img className="h-8 w-auto"src="https://www.cdnlogo.com/logos/f/32/flight.svg" alt="" /> */}
                     </a>
@@ -200,10 +206,10 @@ const Header = () => {
 
                                     </Disclosure.Panel>
                                     <div className="flex  flex-col">
-                                        <a href="#" className='items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold 
+                                        <a href="/AboutUs" className='items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold 
                                     leading-7 text-white hover:bg-sky-800'> About Us</a>
                                        
-                                        <a href="#" className='items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold 
+                                        <a href="/ContactUs" className='items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold 
                                     leading-7 text-white hover:bg-sky-800'> Contact Us</a>
                                 
 
