@@ -9,7 +9,8 @@ const inter = Inter({ subsets: ["latin"] });
     
 export const metadata: Metadata = {
   title: "UVL_WEB",
-  description: "UniVersaLink Solutions"
+  description: "UniVersaLink Solutions",
+  
 };
 
 export default function RootLayout({
@@ -19,6 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="icon" href="./Screenshot 2024-02-04 172524.png" />
       
       <body className={inter.className}>
       <Header/>
