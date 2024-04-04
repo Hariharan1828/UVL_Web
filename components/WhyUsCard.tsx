@@ -3,7 +3,7 @@ import { HoverEffect } from "../components/Card_Design";
 
 export function WhyUsCard() {
   return (
-    <section className="p-8 md:p-16">
+    <section id="WhyUS" className="p-8 md:p-16">
          <div className=" container max-w-screen-xl mx-auto px-4 overflow-hidden">
         
             <h1 className='font-bold font-display text-sky-700 text-3xl md:text-4xl text-center mb-5 '>
@@ -23,19 +23,19 @@ export const projects = [
     title: "Expertise",
     description:
       "Leverage the expertise of seasoned professionals in the industry.",
-    link: "",
+    link: "#WhyUs",
   },
   {
     title: "Innovation",
     description:
       " Stay ahead with cutting-edge technologies and creative solutions.",
-    link: "",
+    link: "#WhyUs",
   },
   {
     title: "Customization",
     description:
       "Tailored services designed to meet the unique needs of your business.",
-    link: "",
+    link: "#WhyUs",
   },
 
 ];
