@@ -24,7 +24,7 @@ const Terms = () => {
             <strong>Privacy Policy:</strong> Your use of this website is also governed by our Privacy Policy, which can be found <a href="[link to Privacy Policy]" className="text-sky-700 underline">here</a>.
         </p>
         <p className='mt-2'>
-            <strong>Disclaimer:</strong> The information on this website is provided "as is" without any warranties, expressed or implied. UniVersaLink Solutions makes no representations or warranties regarding the accuracy, completeness, or suitability of the information.
+            <strong>Disclaimer:</strong> The information on this website is provided &quot;as is&quot; without any warranties, expressed or implied. UniVersaLink Solutions makes no representations or warranties regarding the accuracy, completeness, or suitability of the information.
         </p>
         <p className='mt-2'>
             <strong>Limitation of Liability:</strong> UniVersaLink Solutions shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising out of your access, use, or inability to use this website.
